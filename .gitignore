@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Environment/config files
+.env
+.env.*
+config.yaml
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+*.env
+
+# ChromaDB (local database files)
+chroma_db/
+chroma_db/*
+
+# Logs
+logs/
+*.log
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# VSCode or PyCharm project files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data
+data/
+!data/docs/         # keep the empty docs/ directory if needed, remove this if not required
+data/docs/*.pdf     # ignore policy documents (uncomment if your docs directory should be ignored)
+data/docs/*.docx
+data/docs/*.txt
+
+# Misc
+*.bak
+*.tmp
+
+# Test outputs
+test_outputs/
