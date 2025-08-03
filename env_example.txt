@@ -1,0 +1,15 @@
+# Copy this file to .env and fill in your actual values
+
+# API Configuration (Choose one or both)
+OPENAI_API_KEY=your-openai-api-key-here
+GEMINI_API_KEY=your-gemini-api-key-here
+
+# API Configuration  
+API_KEY=your-secure-api-key
+
+# Optional: Model Configuration
+GPT_MODEL=gpt-4o
+GEMINI_MODEL=gemini-1.5-flash
+
+# Optional: Port Configuration
+PORT=8000 

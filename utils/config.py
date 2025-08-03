@@ -18,13 +18,21 @@ CHROMA_COLLECTION = "policy_documents"
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
-# OpenAI Configuration
+# API Configuration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise EnvironmentError("❌ OPENAI_API_KEY is not set. Please add it to your .env file.")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# ✅ Use GPT-4o by default (supports JSON mode)
+# Check which API is available
+if not OPENAI_API_KEY and not GEMINI_API_KEY:
+    print("⚠️  Warning: No API keys found. Some features may not work.")
+    OPENAI_API_KEY = "dummy-key-for-parsing-only"  # Allow parsing to work without API
+
+# Model Configuration
 GPT_MODEL = os.getenv("GPT_MODEL", "gpt-4o")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+
+# Use Gemini by default if available, otherwise use OpenAI
+USE_GEMINI = bool(GEMINI_API_KEY)
 
 # Retriever
 TOP_K = 5
