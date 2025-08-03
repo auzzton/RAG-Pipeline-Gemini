@@ -1,7 +1,12 @@
 import requests
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 API_URL = "http://127.0.0.1:8000/hackrx/run"
-API_KEY = "AIzaSyDtV1QfxjAgJ-HiAkltaveuUCTPW6CdFec"  # Replace with your actual API key from .env
+API_KEY = os.getenv("API_KEY", "your-secure-api-key")  # Get from environment variable
 DOCUMENT_PATH = "C:/Projects/Bajaj_new/Bajaj-hackathon/data/docs/bajaj document 5.pdf"  # Absolute path to your document
 
 payload = {
