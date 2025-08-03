@@ -2,7 +2,7 @@ import google.generativeai as genai
 import os
 
 # Set the API key directly
-GEMINI_API_KEY = "AIzaSyDtV1QfxjAgJ-HiAkltaveuUCTPW6CdFec"
+GEMINI_API_KEY = "YOUR-API-KEY"
 
 print("🌟 Testing Gemini API Key Directly")
 print("=" * 50)
