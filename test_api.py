@@ -1,7 +1,7 @@
 import requests
 
 API_URL = "http://127.0.0.1:8000/hackrx/run"
-API_KEY = "AIzaSyDtV1QfxjAgJ-HiAkltaveuUCTPW6CdFec"  # Replace with your actual API key from .env
+API_KEY = "YOUR-API-KEY"  # Replace with your actual API key from .env
 DOCUMENT_PATH = "C:/Projects/Bajaj_new/Bajaj-hackathon/data/docs/bajaj document 5.pdf"  # Absolute path to your document
 
 payload = {
